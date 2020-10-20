@@ -100,107 +100,209 @@
                 </div>
             </div>
         </div>
+        <style>
+            /* Style the Image Used to Trigger the Modal */
+            #myImg {
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            #myImg:hover {
+                opacity: 0.7;
+            }
+
+            /* The Modal (background) */
+            .modal {
+                display: none;
+                /* Hidden by default */
+                position: fixed;
+                /* Stay in place */
+                z-index: 1;
+                /* Sit on top */
+                padding-top: 100px;
+                /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%;
+                /* Full width */
+                height: 100%;
+                /* Full height */
+                overflow: auto;
+                /* Enable scroll if needed */
+                background-color: rgb(0, 0, 0);
+                /* Fallback color */
+                background-color: rgba(0, 0, 0, 0.9);
+                /* Black w/ opacity */
+            }
+
+            /* Modal Content (Image) */
+            .modal-content {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+            }
+
+            /* Caption of Modal Image (Image Text) - Same Width as the Image */
+            #caption {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: #ccc;
+                padding: 10px 0;
+                height: 150px;
+            }
+
+            /* Add Animation - Zoom in the Modal */
+            .modal-content,
+            #caption {
+                animation-name: zoom;
+                animation-duration: 0.6s;
+            }
+
+            @keyframes zoom {
+                from {
+                    transform: scale(0)
+                }
+
+                to {
+                    transform: scale(1)
+                }
+            }
+
+            /* The Close Button */
+            .close {
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            /* 100% Image Width on Smaller Screens */
+            @media only screen and (max-width: 700px) {
+                .modal-content {
+                    width: 100%;
+                }
+            }
+        </style>
+
+
         <div class="space-small bg-default">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <h2>Our Galery</h2>
-                        <div id="mdb-lightbox-ui"></div>
-                        <div class="mdb-lightbox no-margin">
-                            <figure class="col-md-4">
-                                <a class="black-text"
-                                    href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(121).jpg"
-                                    data-size="1600x1067">
-                                    <img alt="picture"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(121).jpg"
-                                        class="img-fluid">
+                        <!-- Trigger the Modal -->
+                        <img id="myImg" src="{% static 'images/weddingpic1.jpg' %}" alt="Snow"
+                            style="width:100%;max-width:400px" onclick="BindClickEventForImage(this)" />
 
-                                </a>
-                            </figure>
-                            <figure class="col-md-4">
-                                <a class="black-text"
-                                    href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(96).jpg"
-                                    data-size="1600x1067">
-                                    <img alt="picture"
-                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(96).jpg"
-                                        class="img-fluid" />
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
 
-                                </a>
-                            </figure>
+                            <!-- The Close Button -->
+                            <span class="close">&times;</span>
+
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01">
+
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
                         </div>
+
+                        <img id="myImg" src="{% static 'images/weddingpic2.jpg' %}" alt="Snow 1"
+                            style="width:100%;max-width:400px" onclick="BindClickEventForImage(this)" />
+
+                        <!-- The Modal -->
+
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="footer">
-                <!-- footer-->
-                <div class="container">
-                    <div class="footer-block">
-                        <!-- footer block -->
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <div class="footer-widget">
-                                    <h2 class="widget-title">Contact Information</h2>
-                                    <ul class="listnone contact">
-                                        <li><i class="fa fa-map-marker"></i> 363 Binh Hoa Thai Binh, Chau Thanh, Tay
-                                            Ninh </li>
-                                        <li><i class="fa fa-map-marker"></i> 397 Ly Thong Kiet, Phuong 8, Tan Binh, HCMC
-                                        </li>
-                                        <li><i class="fa fa-phone"></i> +84 93 953 07 40</li>
-                                        <li><i class="fa fa-envelope-o"></i>annangocquy1984@gmail.com</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                <div class="footer-widget footer-social">
-                                    <!-- social block -->
-                                    <h2 class="widget-title">Social Feed</h2>
-                                    <ul class="listnone">
-                                        <li>
-                                            <a href="https://www.facebook.com/Anh-Duong-Beauty-106368761079559/"> <i
-                                                    class="fa fa-facebook"></i> Facebook </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.social block -->
-                            </div>
-                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                                <div class="footer-widget widget-newsletter">
-                                    <!-- newsletter block -->
-                                    <h2 class="widget-title">Newsletters</h2>
-                                    <p>Enter your email address to receive new patient information and other useful
-                                        information
-                                        right to your inbox.</p>
-                                    <button class="btn btn-default" type="button">Subscribe</button>
-                                    <!-- /input-group -->
-                                </div>
-                                <!-- newsletter block -->
-                            </div>
+    <div class="footer">
+        <!-- footer-->
+        <div class="container">
+            <div class="footer-block">
+                <!-- footer block -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget">
+                            <h2 class="widget-title">Contact Information</h2>
+                            <ul class="listnone contact">
+                                <li><i class="fa fa-map-marker"></i> 363 Binh Hoa Thai Binh, Chau Thanh, Tay
+                                    Ninh </li>
+                                <li><i class="fa fa-map-marker"></i> 397 Ly Thong Kiet, Phuong 8, Tan Binh, HCMC
+                                </li>
+                                <li><i class="fa fa-phone"></i> +84 93 953 07 40</li>
+                                <li><i class="fa fa-envelope-o"></i>annangocquy1984@gmail.com</li>
+                            </ul>
                         </div>
-                        <div class="tiny-footer">
-                            <!-- tiny footer block -->
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="copyright-content" ,>
-                                        <p>© Anh Duong 2020 | all rights reserved</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.tiny footer block -->
                     </div>
-                    <!-- /.footer block -->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget footer-social">
+                            <!-- social block -->
+                            <h2 class="widget-title">Social Feed</h2>
+                            <ul class="listnone">
+                                <li>
+                                    <a href="https://www.facebook.com/Anh-Duong-Beauty-106368761079559/"> <i
+                                            class="fa fa-facebook"></i> Facebook </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.social block -->
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <div class="footer-widget widget-newsletter">
+                            <!-- newsletter block -->
+                            <h2 class="widget-title">Newsletters</h2>
+                            <p>Enter your email address to receive new patient information and other useful
+                                information
+                                right to your inbox.</p>
+                            <button class="btn btn-default" type="button">Subscribe</button>
+                            <!-- /input-group -->
+                        </div>
+                        <!-- newsletter block -->
+                    </div>
                 </div>
+                <div class="tiny-footer">
+                    <!-- tiny footer block -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="copyright-content" ,>
+                                <p>© Anh Duong 2020 | all rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.tiny footer block -->
             </div>
-            <!-- /.footer-->
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-            <script src="{% static 'js/jquery.min.js' %}"></script>
-            <!-- Include all compiled plugins (below), or include individual files as needed -->
-            <script src="{% static 'js/bootstrap.min.js' %}"></script>
-            <script src="{% static 'js/menumaker.js' %}"></script>
-            <!-- sticky header -->
-            <script src="{% static 'js/jquery.sticky.js' %}"></script>
-            <script src="{% static 'js/sticky-header.js' %}"></script>
+            <!-- /.footer block -->
+        </div>
+    </div>
+    <!-- /.footer-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/menumaker.js' %}"></script>
+    <!-- sticky header -->
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'js/sticky-header.js' %}"></script>
+    <script src="{% static 'js/modal.js' %}"></script>
 
 </body>
 

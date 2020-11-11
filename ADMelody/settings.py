@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
     'products.apps.ProductsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -76,8 +77,12 @@ WSGI_APPLICATION = 'ADMelody.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'admelody',
+        'USER': 'postgres',
+        'PASSWORD': 'Thaiminh2912',
+        'HOST': 'localhost',
+        'PORT': '5433',
     }
 }
 
@@ -121,21 +126,20 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,"ADMelody/static"),
+    os.path.join(BASE_DIR, "ADMelody/static"),
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR,"static")
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
-MEDIA_ROOT = os.path.join(BASE_DIR,"media")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 MEDIA_URL = '/media/'
 
-#Email settings
+# Email settings
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "anhduongbeauty.2009@gmail.com"
 EMAIL_HOST_PASSWORD = 'Thaiminh2912'
-EMAIL_USE_TLS = True 
-
+EMAIL_USE_TLS = True

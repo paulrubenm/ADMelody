@@ -22,11 +22,20 @@ import ADMelody.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home, name='home'),
-    path('aboutus/',views.aboutus, name='aboutus'),
-    path('services/',views.services, name='services'),
-    path('products/',views.products, name='products'),
-    path('contact/',views.contact, name='contact'),
+    path('en/', views.home, name='home'),
+    path('en/aboutus/', views.aboutus, name='aboutus'),
+    path('en/services/', views.services, name='services'),
+    path('en/products/', views.products, name='products'),
+    path('en/contact/', views.contact, name='contact'),
+    path('en/blog/', views.blog, name='blog'),
+    path('en/blog/<int:blog_id>/', views.detail, name="detail"),
+
+    path('', views.homevn, name='homevn'),
+    path('aboutus/', views.aboutusvn, name='aboutusvn'),
+    path('services/', views.servicesvn, name='servicesvn'),
+    path('contact/', views.contactvn, name='contactvn'),
+    path('products/', views.productsvn, name='productsvn'),
+    path('blog/', views.blogvn, name='blogvn'),
+    path('blog/<int:blog_id>/', views.detailvn, name="detailvn"),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-

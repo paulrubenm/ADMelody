@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Hair salon templates for mens hair cut service provider.">
+    <meta name="keywords"
+        content="hair salon website templates free download, html5 template, free responsive website templates, website layout,html5 website templates, template for website design, beauty HTML5 templates, cosmetics website templates free download">
+    <title>AD |Wedding, Makeup & Beauty</title>
+    <!-- Bootstrap -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <link rel="shortcut icon" href="{% static 'images/tabicon.png' %}">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-2">
+                <a href="{% url 'homevn' %}"><img src="{% static 'images/logo.png' %}"></a>
+            </div>
+            <div class="col-lg-10">
+                <div class="navigation">
+                    <div class="row">
+                        <div id="navigation">
+                            <ul>
+                                <li class="active"><a href="{% url 'homevn' %}" title="Home">Trang chủ</a></li>
+                                <li class="active"><a href="{% url 'aboutusvn' %}" title="About Us">Về chúng tôi</a>
+                                </li>
+                                <li class="active"><a href="{% url 'servicesvn' %}" title="Our Services">Dịch vụ</a>
+                                </li>
+                                <li class="active"><a href="{% url 'productsvn' %}" title="Our Dresses">Áo cưới</a></li>
+                                <li class="active"><a href="{% url 'blogvn' %}" title="Blog">Chủ đề</a></li>
+                                <li class="active"><a href="{% url 'contactvn' %}" title="Contact Us">Liên hệ</a></li>
+                                <li class="active"><a href="{% url 'home' %}"><img
+                                            src="{% static 'images/ukflag.png' %}" height="20px" width="30px"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="page-header1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="page-caption">
+                        <h2 class="page-title">Về chúng tôi</h2>
+                        <div class="page-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li><a href="{% url 'home' %}">Trang chủe</a></li>
+                                <li class="active"> / Về chúng tôi</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space-small">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="post-block">
+                        <div class="row ">
+                            <!-- post block -->
+
+                        </div>
+                        <div class="post-content" style="padding-right: 0px; padding-top: 0px;">
+                            <h2>Về Chúng Tôi</h2>
+                            <p class="text-justify">Tại mỗi giai đoạn của kế hoạch cưới hoặc nhiều hơn thế nữa thì Ánh
+                                Dương Beauty là điểm đến thú vị để tạo ra, chia sẻ và ghi nhớ ngày trọng đại của bạn
+                                theo những phong cách độc đáo nhất, biến ngày trọng đại của bạn trở thành tất cả những
+                                gì bạn muốn. Chúng tôi ở đây để hỗ trợ và rất vui khi được trở thành một phần trong hành
+                                trình thú vị của bạn.</p>
+                            <p class="text-justify">Ngày của bạn, theo cách của bạn</p>
+                            <p class="text-justify">Đó là đám cưới của bạn và bạn xứng đáng được tổ chức theo cách của
+                                mình, từ đầu đến cuối. Bất kể bạn muốn một phong cách cổ điển, trang trọng hay một điều
+                                gì đó mộc mạc hơn, bạn đều có thể thực hiện tại Ánh Dương Beauty.</p>
+                            <p class="text-justify">Dịch vụ của chúng tôi</p>
+                            <p class="text-justify">Ánh Dương Beauty được thành lập với ý định đưa phong cách trang điểm
+                                quốc tế vào thị trường Việt Nam. Các kỹ thuật viên của chúng tôi được đào tạo bài bản về
+                                các kỹ thuật thẩm mỹ được áp dụng quốc tế, cụ thể là Nhật Bản và Hàn Quốc. Chúng tôi sẽ
+                                làm bạn trông xinh đẹp và khác biệt một cách lộng lẫy.</p>
+                            <p class="text-justify">Năng lực cốt lõi của chúng tôi bao gồm không giới hạn trong việc
+                                trang điểm cho các sự kiện, trang điểm đám cưới mà còn cung cấp dịch vụ phun xăm thẩm mỹ
+                                và bán các sản phẩm mỹ phẩm nhập khẩu trực tiếp từ nước Mỹ.</p>
+                        </div>
+                    </div>
+                    <!-- /.post block -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <style>
+        /* Style the Image Used to Trigger the Modal */
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #myImg:hover {
+            opacity: 0.7;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content (Image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image (Image Text) - Same Width as the Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation - Zoom in the Modal */
+        .modal-content,
+        #caption {
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+    </style>
+
+
+    <div class="space-small bg-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2>Our Galery</h2>
+                    </br>
+                    <!-- Trigger the Modal -->
+                    <img id="myImg" src="{% static 'images/weddingpic1.jpg' %}" style="width:100%;max-width:400px"
+                        height=200px onclick="BindClickEventForImage(this)" />
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img01">
+
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                    </div>
+
+                    <img id="myImg" src="{% static 'images/weddingpic2.jpg' %}" style="width:100%;max-width:400px"
+                        onclick="BindClickEventForImage(this)" />
+
+                    <!-- The Modal -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <!-- footer-->
+        <div class="container">
+            <div class="footer-block">
+                <!-- footer block -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget">
+                            <h2 class="widget-title">THÔNG TIN LIÊN HỆ</h2>
+                            <ul class="listnone contact">
+                                <li><i class="fa fa-map-marker"></i>363 Bình Hòa Thái Bình Châu Thành Tây Ninh</li>
+                                <li><i class="fa fa-map-marker"></i>397 Lý Thường Kiệt Phường 8 Q.Tân Bình TPHCM</li>
+                                <li><i class="fa fa-phone"></i>0939 530740</li>
+                                <li><i class="fa fa-phone"></i>0904 887283</li>
+                                <li><i class="fa fa-envelope-o"></i>anhduongbeauty.2009@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget footer-social">
+                            <!-- social block -->
+                            <h2 class="widget-title">PHƯƠNG TIỆN TRUYỀN THÔNG</h2>
+                            <ul class="listnone">
+                                <li>
+                                    <a href="https://www.facebook.com/Anh-Duong-Beauty-106368761079559/"> <i
+                                            class="fa fa-facebook"></i> Facebook </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.social block -->
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <div class="footer-widget widget-newsletter">
+                            <!-- newsletter block -->
+                            <h2 class="widget-title">TIN TỨC & BLOG MỚI NHẤT</h2>
+                            <p>Truy cập trang blog của chúng tôi để xem các bài viết và thông tin mới nhất.
+                            </p>
+                            <a href="{% url 'blogvn' %}" class="btn btn-default">TRUY CẬP</a>
+                            <!-- /input-group -->
+                        </div>
+                        <!-- newsletter block -->
+                    </div>
+                </div>
+                <div class="tiny-footer">
+                    <!-- tiny footer block -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="copyright-content" ,>
+                                <p>© Anh Duong 2020 | all rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.tiny footer block -->
+            </div>
+            <!-- /.footer block -->
+        </div>
+    </div>
+    <!-- /.footer-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/menumaker.js' %}"></script>
+    <!-- sticky header -->
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'js/sticky-header.js' %}"></script>
+    <script src="{% static 'js/modal.js' %}"></script>
+
+</body>
+
+</html>

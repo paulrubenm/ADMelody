@@ -484,6 +484,29 @@ label { }
 .page-breadcrumb1 {   }
 .page-breadcrumb1 .breadcrumb { background-color: transparent; margin-bottom: 0px; font-size: 12px; text-transform: uppercase; }
 
+/*----------------------------------------------
+    5.8 Page Header - blogall
+----------------------------------------------*/
+.page-header6 { background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../images/blog-header.jpg) no-repeat center; background-size: cover; margin: 0; border-bottom: none; padding-bottom: 0px; }
+.page-caption { padding: 120px 0px; position: relative; z-index: 1; color: #fff; text-align: center; }
+.page-title { color: #fff;  font-size: 40px; font-weight: 400; letter-spacing: -1px; }
+.breadcrumb { }
+.breadcrumb>.active { }
+.page-breadcrumb1 {   }
+.page-breadcrumb1 .breadcrumb { background-color: transparent; margin-bottom: 0px; font-size: 12px; text-transform: uppercase; }
+
+/*----------------------------------------------
+    5.9 Page Header - blogasingle
+----------------------------------------------*/
+.page-header7 { background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../images/blog-single-header.jpg) no-repeat center; background-size: cover; margin: 0; border-bottom: none; padding-bottom: 0px; }
+.page-caption { padding: 120px 0px; position: relative; z-index: 1; color: #fff; text-align: center; }
+.page-title { color: #fff;  font-size: 40px; font-weight: 400; letter-spacing: -1px; }
+.breadcrumb { }
+.breadcrumb>.active { }
+.page-breadcrumb1 {   }
+.page-breadcrumb1 .breadcrumb { background-color: transparent; margin-bottom: 0px; font-size: 12px; text-transform: uppercase; }
+
+
 /*-----------------------------------
     6. Slider 
 -------------------------------------*/
@@ -619,7 +642,7 @@ address { margin-bottom: 20px; font-style: normal; line-height: 1.42857143; }
 .content { }
 .sidebar { }
 .post-block, .post-quote{ position: relative; background-color: #f4f1ec; padding: 30px; border-radius: 10px;  margin-bottom: 30px;}
-.post-block1, .post-quote{ position: relative; background-color:  white; padding: 30px; border-radius: 10px;  margin-bottom: 30px;}
+.post-block1, .post-quote{ position: relative; background-color:  white; padding: 30px; border-radius: 10px;  margin-bottom: 0px;}
 /*-- use for thumbnail --*/
 .post-holder { position: relative; margin-bottom: 30px; }
 /*-- for single post page --*/

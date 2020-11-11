@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Hair salon templates for mens hair cut service provider.">
+    <meta name="keywords"
+        content="hair salon website templates free download, html5 template, free responsive website templates, website layout,html5 website templates, template for website design, beauty HTML5 templates, cosmetics website templates free download">
+    <title>AD |Wedding, Makeup & Beauty</title>
+    <!-- Bootstrap -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <link rel="shortcut icon" href="{% static 'images/tabicon.png' %}">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-2">
+                <a href="{% url 'homevn' %}"><img src="{% static 'images/logo.png' %}"></a>
+            </div>
+            <div class="col-lg-10">
+                <div class="navigation">
+                    <div class="row">
+                        <div id="navigation">
+                            <ul>
+                                <li class="active"><a href="{% url 'homevn' %}" title="Home">Trang chủ</a></li>
+                                <li class="active"><a href="{% url 'aboutusvn' %}" title="About Us">Về chúng tôi</a>
+                                </li>
+                                <li class="active"><a href="{% url 'servicesvn' %}" title="Our Services">Dịch vụ</a>
+                                </li>
+                                <li class="active"><a href="{% url 'productsvn' %}" title="Our Dresses">Áo cưới</a></li>
+                                <li class="active"><a href="{% url 'blogvn' %}" title="Blog">Chủ đề</a></li>
+                                <li class="active"><a href="{% url 'contactvn' %}" title="Contact Us">Liên hệ</a></li>
+                                <li class="active"><a href="{% url 'home' %}"><img
+                                            src="{% static 'images/ukflag.png' %}" height="20px" width="30px"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="page-header2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="page-caption">
+                        <h2 class="page-title">Dịch vụ</h2>
+                        <div class="page-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li><a href="{% url 'home' %}">Trang chủe</a></li>
+                                <li class="active">/ Dịch vụ</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space-small" style="padding-bottom: 0px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="post-block">
+                        <div class="row ">
+                            <!-- post block -->
+
+                            <div class="col-md-6">
+                                <div class="post-content" style="padding-right: 0px;">
+                                    <h2>DỊCH VỤ CHĂM SÓC DA MẶT</h2>
+                                    <p class="text-justify">Chúng tôi cung cấp dịch vụ chăm sóc da mặt để cải thiện làn
+                                        da của khách hàng với giá cả phải chăng. Chúng tôi cũng có thể hướng dẫn khách
+                                        hàng cách chăm sóc da tốt hơn</p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="post-img">
+                                    <img src="{% static 'images/services-facials.jpg' %}" style="max-height: 270px;"
+                                        class="img-responsve">
+                                </div>
+                            </div>
+                            <!-- /.post block -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space-small bg-default">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="post-block1">
+                            <div class="row ">
+                                <!-- post block -->
+                                <div class="col-md-6">
+                                    <div class="post-img">
+                                        <img src="{% static 'images/services-eyebrowtattoo.jpg' %}"
+                                            style="max-height: 270px;" class="img-responsve">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="post-content" style="padding-right: 0px;">
+                                        <h2>Phun xăm thẩm mỹ</h2>
+                                        <p class="text-justify">Chúng tôi cung cấp dịch vụ phun xăm thẩm mỹ cho lông mày
+                                            và môi với chất lượng cao. Các kỹ thuật viên của chúng tôi được đào tạo và
+                                            được cấp chứng chỉ để mang đến những trải nghiệm tốt nhất cho khách hàng.
+                                            Hình xăm thẩm mỹ của chúng tôi bền và đẹp với giá ưu đãi.</p>
+                                    </div>
+                                </div>
+                                <!-- /.post block -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space-small" style="padding-bottom: 0px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="post-block">
+                            <div class="row ">
+                                <!-- post block -->
+
+                                <div class="col-md-6">
+                                    <div class="post-content" style="padding-right: 0px;">
+                                        <h2>DỊCH VỤ CƯỚI</h2>
+                                        <p class="text-justify">Chúng tôi cung cấp các dịch vụ cưới bao gồm cho thuê váy
+                                            cưới, trang điểm cô dâu / chú rể và chụp ảnh cưới, dịch vụ cưới trọn gói.
+                                            Chúng tôi có rất nhiều áo cưới để lựa chọn cũng như nhiều phong cách trang
+                                            điểm theo phong cách quốc tế</p>
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="post-img">
+                                        <img src="{% static 'images/services-wedding.jpg' %}" style="max-height: 270px;"
+                                            class="img-responsve">
+                                    </div>
+                                </div>
+                                <!-- /.post block -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space-small bg-default">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="post-block1">
+                                <div class="row ">
+                                    <!-- post block -->
+                                    <div class="col-md-6">
+                                        <div class="post-img">
+                                            <img src="{% static 'images/services-products.jpg' %}"
+                                                style="max-height: 270px;" class="img-responsve">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="post-content" style="padding-right: 0px;">
+                                            <h2>Sản phẩm mỹ phẩm</h2>
+                                            <p class="text-justify">Chúng tôi bán các sản phẩm mỹ phẩm nhập khẩu từ Mỹ.
+                                                Sản phẩm của chúng tôi được chứng nhận Quốc tế với giá tốt nhất. Hãy
+                                                liên hệ với chúng tôi để nhận được những ưu đãi tốt nhất về các thương
+                                                hiệu mỹ phẩm hàng đầu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="cta-title">LIÊN HỆ</h1>
+                    <p class="cta-text">Liên hệ với chúng tôi để được tư vấn miễn phí về các dịch vụ</p>
+                    <div class="active"><a href="{% url 'contactvn' %}" class="btn btn-default">LIÊN HỆ</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer">
+        <!-- footer-->
+        <div class="container">
+            <div class="footer-block">
+                <!-- footer block -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget">
+                            <h2 class="widget-title">THÔNG TIN LIÊN HỆ</h2>
+                            <ul class="listnone contact">
+                                <li><i class="fa fa-map-marker"></i>363 Bình Hòa Thái Bình Châu Thành Tây Ninh</li>
+                                <li><i class="fa fa-map-marker"></i>397 Lý Thường Kiệt Phường 8 Q.Tân Bình TPHCM</li>
+                                <li><i class="fa fa-phone"></i>0939 530740</li>
+                                <li><i class="fa fa-phone"></i>0904 887283</li>
+                                <li><i class="fa fa-envelope-o"></i>anhduongbeauty.2009@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget footer-social">
+                            <!-- social block -->
+                            <h2 class="widget-title">PHƯƠNG TIỆN TRUYỀN THÔNG</h2>
+                            <ul class="listnone">
+                                <li>
+                                    <a href="https://www.facebook.com/Anh-Duong-Beauty-106368761079559/"> <i
+                                            class="fa fa-facebook"></i> Facebook </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.social block -->
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <div class="footer-widget widget-newsletter">
+                            <!-- newsletter block -->
+                            <h2 class="widget-title">TIN TỨC & BLOG MỚI NHẤT</h2>
+                            <p>Truy cập trang blog của chúng tôi để xem các bài viết và thông tin mới nhất.
+                            </p>
+                            <a href="{% url 'blogvn' %}" class="btn btn-default">TRUY CẬP</a>
+                            <!-- /input-group -->
+                        </div>
+                        <!-- newsletter block -->
+                    </div>
+                </div>
+                <div class="tiny-footer">
+                    <!-- tiny footer block -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="copyright-content" ,>
+                                <p>© Anh Duong 2020 | all rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.tiny footer block -->
+            </div>
+            <!-- /.footer block -->
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- /.footer-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/menumaker.js' %}"></script>
+    <!-- sticky header -->
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'js/sticky-header.js' %}"></script>
+</body>
+
+</html>

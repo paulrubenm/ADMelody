@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'ADMelody.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'admelody',
         'USER': 'postgres',
         'PASSWORD': 'Thaiminh2912',

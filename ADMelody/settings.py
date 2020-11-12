@@ -25,7 +25,7 @@ SECRET_KEY = 'x@-%3&dzh1*sol9b0*j#wn51uldbvrhf9)n$wp#%skffivb$#7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'ADMelody.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'admelody',
+        'USER': 'postgres',
+        'PASSWORD': 'Thaiminh2912',
+        'HOST': 'localhost',
+        'PORT': '5433',
     }
 }
 
@@ -139,3 +143,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = "anhduongbeauty.2009@gmail.com"
 EMAIL_HOST_PASSWORD = 'Thaiminh2912'
 EMAIL_USE_TLS = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
